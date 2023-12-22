@@ -29,7 +29,7 @@ resource "aws_security_group" "ethereum" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
-  tags {
+  tags = {
     Name = "${var.name}"
   }
 }
@@ -52,7 +52,7 @@ resource "aws_spot_fleet_request" "ethereum" {
     key_name               = "${var.ssh_key_name}"
     user_data              = "${data.template_file.user_data.rendered}"
 
-    tags {
+    tags = {
       Name = "${var.name}"
     }
   }
@@ -65,7 +65,7 @@ resource "aws_spot_fleet_request" "ethereum" {
     key_name               = "${var.ssh_key_name}"
     user_data              = "${data.template_file.user_data.rendered}"
 
-    tags {
+    tags = {
       Name = "${var.name}"
     }
   }
@@ -78,7 +78,7 @@ resource "aws_spot_fleet_request" "ethereum" {
     key_name               = "${var.ssh_key_name}"
     user_data              = "${data.template_file.user_data.rendered}"
 
-    tags {
+    tags = {
       Name = "${var.name}"
     }
   }
@@ -91,7 +91,7 @@ resource "aws_spot_fleet_request" "ethereum" {
     key_name               = "${var.ssh_key_name}"
     user_data              = "${data.template_file.user_data.rendered}"
 
-    tags {
+    tags = {
       Name = "${var.name}"
     }
   }
@@ -104,7 +104,7 @@ resource "aws_spot_fleet_request" "ethereum" {
     key_name               = "${var.ssh_key_name}"
     user_data              = "${data.template_file.user_data.rendered}"
 
-    tags {
+    tags = {
       Name = "${var.name}"
     }
   }
@@ -117,7 +117,7 @@ resource "aws_spot_fleet_request" "ethereum" {
     key_name               = "${var.ssh_key_name}"
     user_data              = "${data.template_file.user_data.rendered}"
 
-    tags {
+    tags = {
       Name = "${var.name}"
     }
   }
@@ -130,7 +130,7 @@ resource "aws_spot_fleet_request" "ethereum" {
     key_name               = "${var.ssh_key_name}"
     user_data              = "${data.template_file.user_data.rendered}"
 
-    tags {
+    tags = {
       Name = "${var.name}"
     }
   }
@@ -143,7 +143,7 @@ resource "aws_spot_fleet_request" "ethereum" {
     key_name               = "${var.ssh_key_name}"
     user_data              = "${data.template_file.user_data.rendered}"
 
-    tags {
+    tags = {
       Name = "${var.name}"
     }
   }
@@ -156,7 +156,7 @@ resource "aws_spot_fleet_request" "ethereum" {
     key_name               = "${var.ssh_key_name}"
     user_data              = "${data.template_file.user_data.rendered}"
 
-    tags {
+    tags = {
       Name = "${var.name}"
     }
   }
@@ -169,7 +169,7 @@ resource "aws_spot_fleet_request" "ethereum" {
     key_name               = "${var.ssh_key_name}"
     user_data              = "${data.template_file.user_data.rendered}"
 
-    tags {
+    tags = {
       Name = "${var.name}"
     }
   }
