@@ -3,13 +3,13 @@ provider "aws" {
 }
 
 module "iam" {
-  source = "modules/ethereum-iam"
+  source = "./modules/ethereum-iam"
 
   name = "${var.name}"
 }
 
 module "spotfleet" {
-  source = "modules/ethereum-spotfleet"
+  source = "./modules/ethereum-spotfleet"
 
   name             = "${var.name}"
   wallet_address   = "${var.wallet_address}"
@@ -22,7 +22,7 @@ module "spotfleet" {
 }
 
 module "alarms" {
-  source = "modules/ethereum-alarms"
+  source = "./modules/ethereum-alarms"
 
   name         = "ethereum"
   spotfleet_id = "${module.spotfleet.spotfleet_id}"
