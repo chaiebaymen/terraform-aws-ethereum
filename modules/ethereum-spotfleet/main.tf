@@ -1,5 +1,5 @@
 data "aws_region" "current" {
-  current = true
+#  current = true
 }
 
 data "template_file" "user_data" {
