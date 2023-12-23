@@ -34,12 +34,12 @@ variable "spot_price" {
 variable "ssh_key_name" {
   description = "The name of an EC2 Key Pair that can be used to SSH to the EC2 Instances in this cluster."
 }
-
+#     "us-east-1" = "ami-816b9bfb"
 variable "images" {
   type = "map"
 
   default = {
-    "us-east-1" = "ami-816b9bfb"
+    "us-east-1" = "ami-01d97add412e9b421"
     "us-east-2" = "ami-7c5b7619"
     "us-west-1" = "ami-32655552"
     "us-west-2" = "ami-bce41dc4"
