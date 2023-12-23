@@ -28,7 +28,7 @@ variable "email" {
 # Optional Variables
 variable "aws_region" {
   description = "AWS region to create resources in"
-  default     = "us-west-2"
+  default     = "us-east-1"
 }
 
 variable "ssh_key_name" {
